@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./public.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部侧边 -->
+        <ul class="sidebar">
+            <li class="left-header_sidebar">管道机器人上机位</li>
+            <li class="right-header_sidebar">
+                <div class="window-size">
+                    <span class="iconfont icon-zuixiaohua"></span>
+                    <span class="iconfont icon-zuidahua"></span>
+                    <span class="iconfont icon-guanbi1"></span>
+                </div>
+            </li>
+        </ul>
+        <!-- 头部选项卡 -->
+        <div class="header">
+            <ul class="nav">
+                <li>文件</li>
+                <li>摄像</li>
+                <li>机器状态</li>
+                <li>环境详情</li>
+                <li>设置</li>
+                <li>帮助</li>
+            </ul>
+        </div>
+        <!-- 分割线 -->
+            <ul class="lines">
+                <li class="line1"></li>
+                <li class="line2"></li>
+                <li class="line3"></li>
+            </ul>
+        <!-- 视频 摄像头区域 -->
+        <div class="body">
+                <div class="video"></div>
+                <div class="camera"></div>
+                 <!-- 底部控制区域 -->
+                <div class="control">
+                    <ul class="controlList">
+                        <li>
+                            <span>串口号</span> &nbsp;&nbsp;
+                            <select name="SerialPortNumber">
+                                <option value="none">COM1</option>
+                                <option value="1"></option>
+                                <option value="2"></option>                       
+                                <option value="3"></option>                       
+                                <option value="4"></option>                       
+                                <option value="5"></option>                        
+                            </select>
+                        </li>
+                        <li>
+                            <span>停止位</span>  &nbsp;&nbsp;
+                            <select name="StopBit">
+                                <option value="none">1</option>
+                                <option value="1"></option>
+                                <option value="2"></option>                       
+                                <option value="3"></option>                       
+                                <option value="4"></option>                       
+                                <option value="5"></option>                       
+                            </select>
+                        </li>
+                        <li>
+                            <span>波特率</span> &nbsp;&nbsp;
+                            <select name="BaudRate">
+                                <option value="none">9600</option>
+                                <option value="1"></option>
+                                <option value="2"></option>                       
+                                <option value="3"></option>                       
+                                <option value="4"></option>                       
+                                <option value="5"></option>                       
+                            </select>
+                        </li>
+                        <li>
+                            <span>奇偶校验</span>
+                            <select name="Parity">
+                                <option value="none">无</option>
+                                <option value="1"></option>
+                                <option value="2"></option>                       
+                                <option value="3"></option>                       
+                                <option value="4"></option>                       
+                                <option value="5"></option>                      
+                            </select>
+                        </li>
+                    </ul>
+                    <!-- 控制按钮 -->
+                    <div class="button">
+                       <button class="close">关闭串口</button>
+                       <button class="open">打开串口</button>
+                       <button class="testing">检测串口</button>
+                    </div>                    
+                </div>
+                <!-- 摄像头控制区域 -->
+                <div class="cameraControl">
+                    <div class="caremaName">
+                        <span>摄像头名称：</span>
+                        <select name="caremaName">
+                            <option value="none">canerasd</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                        </select>
+                        <button class="open">打开</button>
+                        <button class="close">关闭</button>
+                    </div>
+                    <div class="cameraSwitch">
+                        <button class="photograph">拍照</button>
+                        <button class="close">灯光</button>
+                    </div>
+                    <div class="power">
+                        <span class="text">电量:</span>
+                        <span class="iconfont icon-electricity-full"></span>
+                    </div>
+                    <!-- 方向控制区域 -->
+                    <div class="DirectionControl">
+                        <div class="controltext">
+                            <span>摄像</span>
+                            <br>
+                            <span>调控</span>
+                        </div>
+                        <div>
+                            <span class="iconfont icon-cs-dw-xs-1"></span>
+                            <span class="iconfont icon-cs-dw-xx-1"></span>
+                            <span class="iconfont icon-cs-dw-xy-1"></span>
+                            <span class="iconfont icon-cs-dw-xz-1"></span>
+                            <span class="iconfont icon-yuan"></span>
+                        
+                        </div>
+                </div>
+            </div>
+       
+    </div>
+</body>
+</html>

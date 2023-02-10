@@ -1,0 +1,309 @@
+html,
+body {
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    height: 12px;
+    margin-top: 5px;
+    margin-left: 9px;
+    margin-right: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.left-header_sidebar {
+    margin-left: 0;
+}
+
+.right-header_sidebar {
+    margin-right: 0;
+}
+
+.window-size {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-size>span {
+    height: 12px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.window-size>span:nth-child(3):hover {
+    background-color: red;
+    transition: background-color .6s;
+}
+
+.header {
+    width: 470px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.nav>li {
+    width: auto;
+    height: 35px;
+    padding-left: 1px;
+    padding-right: 1px;
+    line-height: 2;
+}
+
+.nav>li:hover {
+    background-color: #dee7f5;
+    transition: background-color .6s;
+}
+
+.lines {
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+
+.line1 {
+    width: 100%;
+    height: 1px;
+    background-color: #9f999b;
+}
+
+.line2 {
+    width: 100%;
+    height: 1px;
+    background-color: #b4b4af;
+}
+
+.line3 {
+    width: 100%;
+    height: 1px;
+    background-color: #e9eeef;
+}
+
+.body {
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: #b4c8e6;
+    position: relative;
+}
+
+.video {
+    width: 60%;
+    height: 520px;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    background: url(./img/video.jpg) no-repeat;
+    background-size: cover;
+}
+
+.camera {
+    width: 30%;
+    height: 425px;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    background: url(./img/carema.jpg) no-repeat;
+    background-size: contain;
+}
+
+.control {
+    width: 50%;
+    height: 80px;
+    position: absolute;
+    bottom: 50px;
+    left: -50px;
+    vertical-align: middle;
+}
+
+.controlList {
+    width: 80%;
+    height: 100%;
+}
+
+.control .controlList>li {
+    width: 30%;
+    height: 25%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+
+}
+
+.control .controlList>li>span {
+    margin-right: 5px;
+}
+
+.control .controlList>li>select {
+    width: 50%;
+    height: 100%;
+    background-color: #eff2f1;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.control .button {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    bottom: 15px;
+    right: -180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.button>button {
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #eff2f4;
+}
+
+.cameraControl {
+    width: 100%;
+    height: 100%;
+}
+
+.cameraControl .caremaName {
+    width: 35%;
+    height: 5%;
+    border: 2px solid #dee9ee;
+    position: absolute;
+    bottom: 170px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caremaName>span {
+    margin-left: 20px;
+}
+
+.caremaName>button {
+    width: 15%;
+    height: 80%;
+    cursor: pointer;
+    background-color: #eff2f4;
+    margin-right: 20px;
+}
+
+.caremaName>select {
+    width: 30%;
+    height: 80%;
+    background-color: #eff2f1;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.cameraSwitch {
+    width: 15%;
+    height: 5%;
+    position: absolute;
+    bottom: 120px;
+    right: 300px;
+}
+
+.cameraSwitch>button {
+    width: 30%;
+    height: 80%;
+    cursor: pointer;
+    background-color: #eff2f4;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.power {
+    width: 16%;
+    height: 5%;
+    border: 2px solid #dee9ee;
+    position: absolute;
+    bottom: 75px;
+    right: 311px;
+}
+
+.power .text{
+    margin-left: 30px;
+    margin-right: 80px;
+    vertical-align: baseline;
+}
+.power .icon-electricity-full{
+    line-height: 31px;
+    vertical-align: middle;
+}
+.DirectionControl{
+    width: 240px;
+    height: 160px;
+    border: 2px solid #dee9ee;
+    border-radius: 25%;
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+}
+.DirectionControl .ControlKeys{
+    width: 170px;
+    height: 170px;
+    border: 2px solid #dee9ee;
+}
+.DirectionControl .icon-cs-dw-xs-1{
+    position: absolute;
+    top: 16%;
+    left: 60%;
+}
+.DirectionControl .icon-cs-dw-xx-1{
+    position: absolute;
+    top: 64%;
+    left: 60%;
+}
+.DirectionControl .icon-cs-dw-xy-1{
+    position: absolute;
+    top: 40%;
+    left: 76%;
+}
+.DirectionControl .icon-cs-dw-xz-1{
+    position: absolute;
+    top: 40%;
+    left: 44%;
+}
+.DirectionControl .icon-yuan{
+    position: absolute;
+    top: 39%;
+    left: 60%;
+}
+.DirectionControl .controltext{
+    width: 100px;
+    height: 100px;
+    display:flex;
+    justify-content:center;
+}
+.DirectionControl .controltext>span{
+    align-self:center;
+}
